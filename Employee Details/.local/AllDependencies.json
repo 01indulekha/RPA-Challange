@@ -1791,9 +1791,9 @@
     "restore": {
       "projectUniqueName": "Employee Details",
       "projectName": "Employee Details",
-      "projectPath": "C:\\Users\\ELCOT\\Documents\\UiPath\\Employee Details\\.local",
+      "projectPath": "D:\\RPA-Challange\\Employee Details\\.local",
       "packagesPath": "C:\\Users\\ELCOT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ELCOT\\Documents\\UiPath\\Employee Details\\.local"
+      "outputPath": "D:\\RPA-Challange\\Employee Details\\.local"
     },
     "frameworks": {
       "net461": {
