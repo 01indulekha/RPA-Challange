@@ -195,7 +195,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:OpenBrowser>
           </Sequence>
-          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[&quot;Flipcart offers you Best &quot;]" />
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[&quot;Flipcart offers you The Best &quot;]" />
           <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+g475uiFqUmAekPFUbYlyQAAAAACAAAAAAAQZgAAAAEAACAAAADm16CYZjUQUVfxoCt8qHZ9CcH7JNFNYqfKdaWGgDOFMAAAAAAOgAAAAAIAACAAAADKwgWcGYPtvf8xumuHBXVSZvqG1BYYbnQhLG+Eq8XkmBAAAABqJlO+BZ2M8DKryVIfT6ykQAAAAO0Cj+nCdG8Yi+Yiz0Jn4n7vgybQJ9uTD46dPmfjZNLXcwr4oicT+i+oejK23DC5V5/zVT79nE6tlsAuwdvwa/Y=" Result="[strpswrd]" />
           <ui:InputDialog Options="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter the Mail ID : " Title="E-Mail ID">
             <ui:InputDialog.Result>
@@ -205,12 +205,8 @@
           <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="The Product data has been sent with this mail" DisplayName="Send SMTP Mail Message" Email="lekhaindu02@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[strpswrd]" Port="587" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Comparision of Product in two different websites" To="[mail]">
             <ui:SendMail.Files>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                <InArgument x:TypeArguments="x:String">
-                  <Literal x:TypeArguments="x:String">C:\Users\ELCOT\Desktop\Amazon details.xlsx</Literal>
-                </InArgument>
-                <InArgument x:TypeArguments="x:String">
-                  <Literal x:TypeArguments="x:String">C:\Users\ELCOT\Desktop\Flipcart.xlsx</Literal>
-                </InArgument>
+                <InArgument x:TypeArguments="x:String">C:\Users\ELCOT\Desktop\Amazon details.xlsx</InArgument>
+                <InArgument x:TypeArguments="x:String">C:\Users\ELCOT\Desktop\Flipcart.xlsx</InArgument>
               </scg:List>
             </ui:SendMail.Files>
             <sap:WorkflowViewStateService.ViewState>
