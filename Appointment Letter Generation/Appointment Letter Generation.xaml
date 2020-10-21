@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Appointment_Letter_Generation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="960,674" sap2010:WorkflowViewState.IdRef="Appointment_Letter_Generation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Appointment_Letter_Generation" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="960,4330" sap2010:WorkflowViewState.IdRef="Appointment_Letter_Generation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
       <x:String>System.Activities</x:String>
@@ -52,7 +52,7 @@
       <AssemblyReference>UiPath.Word</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: This workflow replaces the text in the template and saves it to their respective name and send mail with the attachment." DisplayName="Appointment_Letter_Generation" sap:VirtualizedContainerService.HintSize="480,509" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description: This workflow replaces the text in the template and saves it to their respective name and send mail with the attachment." DisplayName="Appointment_Letter_Generation" sap:VirtualizedContainerService.HintSize="811,4165" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="empdata" />
     </Sequence.Variables>
@@ -62,22 +62,22 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,375" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="769,4042" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="376,270" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence sap:VirtualizedContainerService.HintSize="731,3727" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ReadRange AddHeaders="True" DataTable="[empdata]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\ELCOT\Desktop\Appoinment List.xlsx">
+          <ui:ReadRange AddHeaders="True" DataTable="[empdata]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="689,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="C:\Users\ELCOT\Desktop\Appoinment List.xlsx">
             <ui:ReadRange.Range>
               <InArgument x:TypeArguments="x:String">
                 <Literal x:TypeArguments="x:String" Value="" />
               </InArgument>
             </ui:ReadRange.Range>
           </ui:ReadRange>
-          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[EmpData]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[EmpData]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="689,3508" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
@@ -131,7 +131,7 @@
                           <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="521,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[row(&quot;Address&quot;).ToString]" ReplaceAll="True" Search="%[Address]" />
                           <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="521,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="[row(&quot;Applicant Name&quot;).ToString]" ReplaceAll="True" Search="%[Applicant Name]" />
                           <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="521,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" Replace="[row(&quot;Company Name&quot;).ToString]" ReplaceAll="True" Search="%[Company Name]" />
-                          <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="521,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[row(&quot;Resgination&quot;).ToString]" ReplaceAll="True" Search="%[Job Title]" />
+                          <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="521,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[row(&quot;Job Title&quot;).ToString]" ReplaceAll="True" Search="%[Job Title]" />
                           <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="521,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" Replace="[row(&quot;Starting Date&quot;).ToString]" ReplaceAll="True" Search="%[Starting Date]" />
                           <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" Activate="True" DisplayName="Send Hotkey '_WwG'" sap:VirtualizedContainerService.HintSize="521,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f12" KeyModifiers="None" SendWindowMessages="True" SpecialKey="True">
                             <ui:SendHotkey.Target>
@@ -252,7 +252,7 @@
             </ui:ForEachRow.Body>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>

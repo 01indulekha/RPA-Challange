@@ -1975,9 +1975,9 @@
     "restore": {
       "projectUniqueName": "Appointment Letter Generation",
       "projectName": "Appointment Letter Generation",
-      "projectPath": "C:\\Users\\ELCOT\\Documents\\UiPath\\Appointment Letter Generation\\.local",
+      "projectPath": "D:\\RPA-Challange\\Appointment Letter Generation\\.local",
       "packagesPath": "C:\\Users\\ELCOT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ELCOT\\Documents\\UiPath\\Appointment Letter Generation\\.local"
+      "outputPath": "D:\\RPA-Challange\\Appointment Letter Generation\\.local"
     },
     "frameworks": {
       "net461": {
