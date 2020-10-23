@@ -242,7 +242,7 @@
                               </scg:List>
                             </ui:SendMail.Files>
                           </ui:SendMail>
-                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="521,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;The mail has been send with the Appointment Letter&quot;]" />
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="521,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;The mail has been sent with the Attachment.&quot;]" />
                         </Sequence>
                       </ActivityAction>
                     </p:WordApplicationScope.Body>
