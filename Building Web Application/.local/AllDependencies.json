@@ -4174,9 +4174,9 @@
     "restore": {
       "projectUniqueName": "Building Web Application",
       "projectName": "Building Web Application",
-      "projectPath": "C:\\Users\\ELCOT\\Documents\\UiPath\\Building Web Application\\.local",
+      "projectPath": "D:\\RPA-Challange\\Building Web Application\\.local",
       "packagesPath": "C:\\Users\\ELCOT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ELCOT\\Documents\\UiPath\\Building Web Application\\.local"
+      "outputPath": "D:\\RPA-Challange\\Building Web Application\\.local"
     },
     "frameworks": {
       "net461": {
@@ -4214,14 +4214,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU3034",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Threading.Tasks.Extensions 4.5.1' from source 'https://www.myget.org/F/workflow/': This package is signed but not by a trusted signer.",
-      "libraryId": "System.Threading.Tasks.Extensions"
-    }
-  ]
+  }
 }
